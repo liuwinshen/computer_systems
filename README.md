@@ -16,7 +16,8 @@ Note: Comments are assumed to be preceded by `//`.
 No additional compilation is needed.
 
 ### Sample input
-```// Draws a rectangle at the top-left corner of the screen.
+```
+// Draws a rectangle at the top-left corner of the screen.
 // The rectangle is 16 pixels wide and R0 pixels high.
 
 (KBDLOOP)
@@ -31,7 +32,8 @@ No additional compilation is needed.
 ```
 
 ### Sample output if comments are kept
-```//Drawsarectangleatthetop-leftcornerofthescreen.
+```
+//Drawsarectangleatthetop-leftcornerofthescreen.
 //Therectangleis16pixelswideandR0pixelshigh.
 (KBDLOOP)
 @KBD//loopuntilkeypressed
@@ -44,7 +46,8 @@ D=A
 ```
 
 ### Sample output if comments are removed
-```(KBDLOOP)
+```
+(KBDLOOP)
 @KBD
 D=M
 @KBDLOOP
