@@ -10,13 +10,13 @@ with whitespace removed will be `name.out` and placed in the same folder as the
 input file.
 
 To remove comments as well, type `no-comments` at the end of the command. Example:
-`python3 clean.py testfile.in no-comments`
-Note: Comments are assumed to be preceded by `//`
+`python3 clean.py testfile.in no-comments`.
+Note: Comments are assumed to be preceded by `//`.
 
 No additional compilation is needed.
 
-## Sample input
-`// Draws a rectangle at the top-left corner of the screen.
+### Sample input
+```// Draws a rectangle at the top-left corner of the screen.
 // The rectangle is 16 pixels wide and R0 pixels high.
 
 (KBDLOOP)
@@ -28,10 +28,10 @@ No additional compilation is needed.
   @50       // setup: rect will be 50 high
   D=A
   @R0
-`
+```
 
-## Sample output if comments are kept
-`//Drawsarectangleatthetop-leftcornerofthescreen.
+### Sample output if comments are kept
+```//Drawsarectangleatthetop-leftcornerofthescreen.
 //Therectangleis16pixelswideandR0pixelshigh.
 (KBDLOOP)
 @KBD//loopuntilkeypressed
@@ -41,10 +41,10 @@ D;JEQ
 @50//setup:rectwillbe50high
 D=A
 @R0
-`
+```
 
-## Sample output if comments are removed
-`(KBDLOOP)
+### Sample output if comments are removed
+```(KBDLOOP)
 @KBD
 D=M
 @KBDLOOP
@@ -52,4 +52,4 @@ D;JEQ
 @50
 D=A
 @R0
-`
+```
