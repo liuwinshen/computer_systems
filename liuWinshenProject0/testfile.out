@@ -1,0 +1,10 @@
+//Drawsarectangleatthetop-leftcornerofthescreen.
+//Therectangleis16pixelswideandR0pixelshigh.
+(KBDLOOP)
+@KBD//loopuntilkeypressed
+D=M
+@KBDLOOP
+D;JEQ
+@50//setup:rectwillbe50high
+D=A
+@R0
